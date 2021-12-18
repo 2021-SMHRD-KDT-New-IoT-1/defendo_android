@@ -12,5 +12,6 @@ public class join extends AppCompatActivity {
         setContentView(R.layout.activity_join);
 
         //ugly songmi
+        // songmi ugly
     }
 }

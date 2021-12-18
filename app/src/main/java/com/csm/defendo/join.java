@@ -10,6 +10,6 @@ public class join extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
-        //송미는 귀엽다
+        //송미는 안 귀엽다
     }
 }

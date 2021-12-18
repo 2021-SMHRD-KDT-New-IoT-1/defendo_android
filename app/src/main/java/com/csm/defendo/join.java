@@ -11,6 +11,5 @@ public class join extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_join);
 
-        //ugly songmi
     }
 }

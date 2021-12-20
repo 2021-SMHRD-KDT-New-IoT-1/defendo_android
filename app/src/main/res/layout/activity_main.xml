@@ -35,160 +35,29 @@
         android:id="@+id/frameLayout"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bn_view"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        app:itemIconTint="@color/design_default_color_on_secondary"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        app:menu="@menu/mymenu">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bn_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:textAlignment="center"
-            app:itemIconTint="@color/design_default_color_on_secondary"
-            app:itemTextColor="#000000"
-            app:labelVisibilityMode="labeled"
-            app:menu="@menu/mymenu">
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
-        </com.google.android.material.bottomnavigation.BottomNavigationView>
-    </FrameLayout>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:background="@drawable/textview"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintGuide_percent="0.29"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:background="@drawable/textview"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:background="@drawable/textview"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:background="#1A1A1A"
-        android:gravity="center"
-        android:text="복귀"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView14"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:background="#1A1A1A"
-        android:gravity="center"
-        android:text="복귀"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView4"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:background="@drawable/textview"
-        android:gravity="center"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView13"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="4dp"
-        android:layout_weight="1"
-        android:background="#FFB606"
-        android:gravity="center"
-        android:text="출근"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="97dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="28dp"
-        android:layout_weight="1"
-        android:background="#FFB606"
-        android:gravity="center"
-        android:text="출근"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView10"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline2" />
-
-    \
 
 </androidx.constraintlayout.widget.ConstraintLayout>

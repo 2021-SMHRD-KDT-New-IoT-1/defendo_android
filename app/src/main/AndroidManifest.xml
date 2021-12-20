@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Defendo">
         <activity
+            android:name=".w_mypage"
+            android:exported="false" />
+        <activity
+            android:name=".w_defendo"
+            android:exported="false" />
+        <activity
             android:name=".join"
             android:exported="false" />
         <activity
